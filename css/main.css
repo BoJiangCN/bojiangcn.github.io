@@ -1673,7 +1673,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff40ff;
+  background: #8c71ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1827,6 +1827,12 @@ article:last-child .post-eof {
 .post-toc {
   font-size: 0.875em;
 }
+.post-toc .post-toc .nav .nav-child {
+  display: block;
+}
+.post-toc .post-toc .nav .nav-level-1>.nav-child {
+  display: block;
+}
 .post-toc ol {
   list-style: none;
   margin: 0;
@@ -1922,8 +1928,11 @@ article:last-child .post-eof {
 .footer-inner {
   text-align: center;
 }
+#animate {
+  animation: iconAnimate 1.33s ease-in-out infinite;
+}
 .with-love {
-  color: #808080;
+  color: #ff0000;
   display: inline-block;
   margin: 0 5px;
 }
