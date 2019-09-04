@@ -55,18 +55,19 @@
   };
 </script>
 
-  <meta name="description" content="My study note and mistakes i have made">
-<meta property="og:type" content="website">
-<meta property="og:title" content="标签&#x2F;Tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+  <meta name="description" content="After reading this post, you should be able to write simple java applications, use input and out statement and decision making statements and relational and equality operators.">
+<meta name="keywords" content="Java Basic">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java Coding Basic ----- A">
+<meta property="og:url" content="http://yoursite.com/2019/09/03/JavaBasic/index.html">
 <meta property="og:site_name" content="Bo Jiang&#39;s blogs">
-<meta property="og:description" content="My study note and mistakes i have made">
+<meta property="og:description" content="After reading this post, you should be able to write simple java applications, use input and out statement and decision making statements and relational and equality operators.">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-03T00:04:15.479Z">
+<meta property="og:updated_time" content="2019-09-04T03:07:27.727Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="标签&#x2F;Tags">
-<meta name="twitter:description" content="My study note and mistakes i have made">
-  <link rel="canonical" href="http://yoursite.com/tags/">
+<meta name="twitter:title" content="Java Coding Basic ----- A">
+<meta name="twitter:description" content="After reading this post, you should be able to write simple java applications, use input and out statement and decision making statements and relational and equality operators.">
+  <link rel="canonical" href="http://yoursite.com/2019/09/03/JavaBasic/">
 
 
 <script id="page-configurations">
@@ -74,13 +75,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
-    isPage: true,
+    isPost: true,
+    isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>标签/Tags | Bo Jiang's blogs</title>
+  <title>Java Coding Basic ----- A | Bo Jiang's blogs</title>
   <meta name="generator" content="Hexo 3.9.0">
   
 
@@ -206,27 +207,6 @@
 
     
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
 </nav>
 </div>
     </header>
@@ -245,55 +225,272 @@
             
 
   <div id="posts" class="posts-expand">
-    
-    
-    
-    <div class="post-block page">
-      <header class="post-header">
-
-<h1 class="post-title" itemprop="name headline">标签/Tags
-
-</h1>
-
-<div class="post-meta">
+      <article itemscope itemtype="http://schema.org/Article">
   
+  
+  
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/03/JavaBasic/">
 
-</div>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Bo Jiang">
+      <meta itemprop="description" content="My study note and mistakes i have made">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
 
-</header>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bo Jiang's blogs">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Java Coding Basic ----- A
+
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              
+                
+              
+
+              <time title="Created: 2019-09-03 23:02:07" itemprop="dateCreated datePublished" datetime="2019-09-03T23:02:07-04:00">2019-09-03</time>
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-      
-      
-      <div class="post-body">
+        <p>After reading this post, you should be able to write simple java applications, use input and out statement and decision making statements and relational and equality operators.</p><a id="more"></a>
+<h1 id="Basic-Application"><a href="#Basic-Application" class="headerlink" title="Basic Application"></a>Basic Application</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">// First Basic Program</span><br><span class="line"></span><br><span class="line">    public class HelloWorld</span><br><span class="line">    &#123;</span><br><span class="line">        public static void main(String[] args)</span><br><span class="line">        &#123;</span><br><span class="line">            System.out.printIn(<span class="string">"Hello World"</span>);</span><br><span class="line">        &#125;/* End of Method */</span><br><span class="line">    &#125;// End of Class</span><br></pre></td></tr></table></figure>
+
+<h2 id="Symbols"><a href="#Symbols" class="headerlink" title="Symbols"></a>Symbols</h2><ol>
+<li><p>Comment <br></p>
+<ul>
+<li>// <ul>
+<li>point out that this line is a comment</li>
+<li>Improve readability</li>
+<li>Compiler ignores comments (Can be used to debug)</li>
+</ul>
+</li>
+<li>/* …. */<ul>
+<li>Traditional Way and can be used to comment several lines at one time</li>
+<li>Start with /* and end with */</li>
+<li>All text in /* … */ will be ignored by the compiler</li>
+</ul>
+</li>
+<li>/** … */<ul>
+<li>Javadoc comments.</li>
+<li>Should be only comment for class, interface, method, constructor, field and always be written before them.</li>
+<li>All text in /** … */ will be ignored by the compiler but it is not working when its inside the function</li>
+<li>It is support the HTML tags.<br><br><br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th align="left">Operator</th>
+<th align="left">Operation</th>
+<th align="left">Order</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">*</td>
+<td align="left">Multiplication</td>
+<td align="left">Evaluated first(Left to right)</td>
+</tr>
+<tr>
+<td align="left">/</td>
+<td align="left">Division</td>
+<td align="left">Evaluated first(Left to right)</td>
+</tr>
+<tr>
+<td align="left">%</td>
+<td align="left">Remainder</td>
+<td align="left">Evaluated first(Left to right)</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="left">Operator</th>
+<th align="left">Operation</th>
+<th align="left">Order</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">+</td>
+<td align="left">Addition</td>
+<td align="left">Evaluated next (Left to right)</td>
+</tr>
+<tr>
+<td align="left">-</td>
+<td align="left">Subtraction</td>
+<td align="left">Evaluated next(Left to right)</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="left">Operator</th>
+<th align="left">Operation</th>
+<th align="left">Order</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">=</td>
+<td align="left">Assignment</td>
+<td align="left">Evaluated last</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="left">Algebraic Operator</th>
+<th align="left">Java equality or Relational operator</th>
+<th align="left">Sample Java condition</th>
+<th align="left">Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">=</td>
+<td align="left">==</td>
+<td align="left">X == Y</td>
+<td align="left">x is equal to y</td>
+</tr>
+<tr>
+<td align="left">≠</td>
+<td align="left">!=</td>
+<td align="left">X != Y</td>
+<td align="left">x is not equal to y</td>
+</tr>
+<tr>
+<td align="left">&gt;</td>
+<td align="left">&gt;</td>
+<td align="left">X &gt; Y</td>
+<td align="left">x is greater than y</td>
+</tr>
+<tr>
+<td align="left">&lt;</td>
+<td align="left">&lt;</td>
+<td align="left">X &lt; Y</td>
+<td align="left">x is smaller than y</td>
+</tr>
+<tr>
+<td align="left">≥</td>
+<td align="left">≥</td>
+<td align="left">X ≥ Y</td>
+<td align="left">x is greater or equal to y</td>
+</tr>
+<tr>
+<td align="left">≤</td>
+<td align="left">≤</td>
+<td align="left">X ≤ Y</td>
+<td align="left">x is smaller or equal to y</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="left">Operators</th>
+<th align="left">Associativity</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">* / %</td>
+<td align="left">Left to right</td>
+<td align="left">Multiplicative</td>
+</tr>
+<tr>
+<td align="left">+ -</td>
+<td align="left">Left to right</td>
+<td align="left">Additive</td>
+</tr>
+<tr>
+<td align="left">&lt; &lt;= &gt; &gt;=</td>
+<td align="left">Left to right</td>
+<td align="left">Relational</td>
+</tr>
+<tr>
+<td align="left">== !=</td>
+<td align="left">Left to right</td>
+<td align="left">Equality</td>
+</tr>
+<tr>
+<td align="left">=</td>
+<td align="left">Right to Left</td>
+<td align="left">Assignment</td>
+</tr>
+</tbody></table>
+<h1 id="Steps-of-writing-a-program"><a href="#Steps-of-writing-a-program" class="headerlink" title="Steps of writing a program"></a>Steps of writing a program</h1><ul>
+<li>Declaring a class</li>
+<li>Class Body</li>
+<li>Declaring a Method</li>
+<li>Compiling</li>
+</ul>
+
+    </div>
+
+    
+    
+    
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/Java-Basic/" rel="tag"># Java Basic</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
               
-              
-                
-                  
-                
-              
-              1 tag in total
             </div>
-            <div class="tag-cloud-tags">
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
               
-                <a href="/tags/Java-Basic/" style="font-size: 12px; color: #ccc">Java Basic</a>
+                <a href="/2019/08/30/hello-world/" rel="next" title="Hello World">
+                  Hello World <i class="fa fa-chevron-right"></i>
+                </a>
               
             </div>
           </div>
         
-      </div>
-      
-      
-      
-    </div>
+      </footer>
     
+  </div>
+  
+  
+  
+  </article>
 
-    
-    
-    
   </div>
 
 
@@ -331,7 +528,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Basic-Application"><span class="nav-text">Basic Application</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Symbols"><span class="nav-text">Symbols</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Steps-of-writing-a-program"><span class="nav-text">Steps of writing a program</span></a></li></ol></div>
         
       </div>
       <!--/noindex-->
